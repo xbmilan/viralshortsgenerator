@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --dark-navy: #0a0e1a;
+    --dark-navy2: #1a1f2e;
+    --dark-navy3: #2a2f3e;
+    --light-white: #f8fafc;
+    --light-gray: #94a3b8;
+    --neon-purple: #8b5cf6;
+    --neon-teal: #06b6d4;
+  }
+}
+
+body {
+  @apply bg-dark-navy text-light-white font-sans;
+}
+
+.bg-dark-navy {
+  background-color: var(--dark-navy);
+}
+
+.bg-dark-navy2 {
+  background-color: var(--dark-navy2);
+}
+
+.bg-dark-navy3 {
+  background-color: var(--dark-navy3);
+}
+
+.text-light-white {
+  color: var(--light-white);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.text-neon-purple {
+  color: var(--neon-purple);
+}
+
+.text-neon-teal {
+  color: var(--neon-teal);
+}
+
+.border-dark-navy {
+  border-color: var(--dark-navy);
+}
+
+.border-dark-navy2 {
+  border-color: var(--dark-navy2);
+}
+
+.border-dark-navy3 {
+  border-color: var(--dark-navy3);
+}
+
+.border-neon-purple {
+  border-color: var(--neon-purple);
+}
+
+.border-neon-teal {
+  border-color: var(--neon-teal);
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-teal));
+}
+
+.bg-gradient-cta {
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-teal));
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-navy2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-navy3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-purple);
+}
